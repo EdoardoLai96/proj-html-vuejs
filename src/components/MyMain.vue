@@ -7,6 +7,7 @@
       <MyOurClasses/>
       <MyGoals/>
       <MyCallToAction2nd/>
+      <MyGallery/>
       <MyWhatsNew/>
       <MyMap/>
   </main>
@@ -21,6 +22,7 @@ import MyOurClasses from '../components/MyOurClasses'
 import MyGoals from '../components/MyGoals'
 import MyCallToAction2nd from '../components/partials/MyCallToAction2nd'
 import MyWhatsNew from '../components/MyWhatsNew'
+import MyGallery from '../components/MyGallery'
 import MyMap from '../components/MyMap'
 
 
@@ -35,6 +37,7 @@ export default {
         MyGoals,
         MyCallToAction2nd,
         MyWhatsNew,
+        MyGallery,
         MyMap
     }
 
