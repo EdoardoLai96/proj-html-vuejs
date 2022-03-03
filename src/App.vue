@@ -10,7 +10,7 @@
 <script>
 import MyHeader from './components/MyHeader'
 import MyMain from './components/MyMain'
-import MyFooter from './components/MyMain'
+import MyFooter from './components/MyFooter'
 
 
 export default {
