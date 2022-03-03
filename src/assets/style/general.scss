@@ -41,7 +41,7 @@
 
     //FUNZIONA SOLO SE LA COLONNA HA DISPLAY FLEX E CENTER/
 
-  .badge-box{
+  .badge-box-hor{
     display: flex;
     flex-direction: column;
     font-size: 1rem;
@@ -65,13 +65,63 @@
           justify-content: center;
           align-items: center;
         }
-        .badge-title{
-            text-align: center;
-            font-size: 1rem;
-            margin: 0.7rem 0;
+        .badge-text{
+
+            .badge-title{
+                text-align: center;
+                font-size: 1rem;
+                margin: 0.7rem 0;
+            }
+            .badge-caption{
+                font-size: 0.8rem;
+                text-align: center;
+            }
         }
-        .badge-caption{
-            font-size: 0.8rem;
-            text-align: center;
+    }
+
+
+    // DISPOSIZIONE ORIZZONTALE
+
+  .badge-box-ver{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1rem;
+      .badge-icon-primary{
+          background-color: #fe6601;
+          text-align: center;
+          padding: 2rem ;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          height: min-content;
+          width: min-content;
+          img{
+              filter: invert(1);
+              height: 25px;
+          }
         }
+        .badge-text{
+            padding:0 2rem;
+            .badge-title{
+                text-align: left;
+                font-size: 1rem;
+                margin: 0.7rem 0;
+            }
+            .badge-caption{
+                font-size: 0.8rem;
+                text-align: left;
+            }
+        }
+    }
+
+
+    //Box con titolo e caption dx e img float sx
+   
+
+
+    //sizing//@at-root
+
+    .ms_w-min{
+        width: min-content;
     }
