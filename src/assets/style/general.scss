@@ -7,7 +7,6 @@
 //Debug
 .debug-col{
     background-color: #1bafe4;
-    margin: 1px;
     
     }
   .debug-row{
@@ -41,32 +40,15 @@
 
     //FUNZIONA SOLO SE LA COLONNA HA DISPLAY FLEX E CENTER/
 
-  .badge-box-hor{
-    display: flex;
-    flex-direction: column;
+  .badge-box-ver{
     font-size: 1rem;
-    width: min-content;
     padding: 1rem;
-      .badge-icon-secondary{
-          background-color: #554e9e;
-          text-align: center;
+      .badge-icon{
           padding: 2rem ;
           border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          width: min-content;
+          margin: auto;
         }
-      .badge-icon-primary{
-          background-color: #fe6601;
-          text-align: center;
-          padding: 2rem ;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .badge-text{
-
             .badge-title{
                 text-align: center;
                 font-size: 1rem;
@@ -76,33 +58,27 @@
                 font-size: 0.8rem;
                 text-align: center;
             }
-        }
     }
 
 
     // DISPOSIZIONE ORIZZONTALE
 
-  .badge-box-ver{
+  .badge-box-hor{
     display: flex;
     align-items: center;
     font-size: 1rem;
     padding: 1rem;
       .badge-icon-primary{
           background-color: #fe6601;
-          text-align: center;
           padding: 2rem ;
           border-radius: 50%;
-          display: flex;
-          align-items: center;
-          height: min-content;
-          width: min-content;
           img{
               filter: invert(1);
               height: 25px;
           }
         }
         .badge-text{
-            padding:0 2rem;
+            padding:0 1rem;
             .badge-title{
                 text-align: left;
                 font-size: 1rem;

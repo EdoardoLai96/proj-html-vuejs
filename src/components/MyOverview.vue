@@ -18,7 +18,7 @@
             </p>
 
 
-            <div class="badge-box-ver">
+            <div class="badge-box-hor">
               <div class="badge-icon-primary">
                 <img src="../assets/images/clock.png" alt="">
               </div>
@@ -28,7 +28,7 @@
               </div>
             </div>
 
-            <div class="badge-box-ver">
+            <div class="badge-box-hor">
               <div class="badge-icon-primary">
                 <img src="../assets/images/category.png" alt="">
               </div>

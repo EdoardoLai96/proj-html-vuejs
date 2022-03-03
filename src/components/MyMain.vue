@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
       <MyJumbotron/>
       <MyCallToAction/>
       <MyWelcome/>
@@ -8,7 +8,7 @@
       <MyGoals/>
       <MyWhatsNew/>
       <MyMap/>
-  </div>
+  </main>
 </template>
 
 <script>

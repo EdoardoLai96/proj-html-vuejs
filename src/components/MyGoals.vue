@@ -1,7 +1,116 @@
 <template>
-  <div>
-      
-  </div>
+  <section id="mygoals" class="debug-container">
+    <div class="container py-5">
+
+      <div class="row">
+        <div class="col-6 debug-col">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cumque excepturi facilis qui nam necessitatibus. Eligendi perspiciatis eos dolorem, est, voluptatum autem officiis, asperiores assumenda ipsa ullam quisquam earum quibusdam!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae cumque excepturi facilis qui nam necessitatibus. Eligendi perspiciatis eos dolorem, est, voluptatum autem officiis, asperiores assumenda ipsa ullam quisquam earum quibusdam!</p>
+          <div class="checbox-box">
+            <div class="checkbox-box_item">
+              <img src="../assets/images/style_1.png" alt="">
+              <span>Item text</span>
+            </div>
+            <div class="checkbox-box_item">
+              <img src="../assets/images/style_1.png" alt="">
+              <span>Item text</span>
+            </div>
+            <div class="checkbox-box_item">
+              <img src="../assets/images/style_1.png" alt="">
+              <span>Item text</span>
+            </div>
+            <div class="checkbox-box_item">
+              <img src="../assets/images/style_1.png" alt="">
+              <span>Item text</span>
+            </div>
+            <div class="checkbox-box_item">
+              <img src="../assets/images/style_1.png" alt="">
+              <span>Item text</span>
+            </div>
+            <div class="checkbox-box_item">
+              <img src="../assets/images/style_1.png" alt="">
+              <span>Item text</span>
+            </div>
+            <div class="checkbox-box_item">
+              <img src="../assets/images/style_1.png" alt="">
+              <span>Item text</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 debug-col">
+          <div class="row">
+            <div class="col-6 p-0">
+              <div class="badge-box-ver">
+              <div class="badge-icon bg-white">
+                <img src="../assets/images/toy.png" alt="">
+              </div>
+              <div class="badge-text">
+                <h4 class="badge-title">Badge Title</h4>
+                <p class="badge-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+              </div>
+            </div>
+            </div>
+
+            <div class="col-6 p-0">
+              <div class="badge-box-ver">
+              <div class="badge-icon bg-white">
+                <img src="../assets/images/toy.png" alt="">
+              </div>
+              <div class="badge-text">
+                <h4 class="badge-title">Badge Title</h4>
+                <p class="badge-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="col-6 p-0">
+              <div class="badge-box-ver">
+              <div class="badge-icon bg-white">
+                <img src="../assets/images/toy.png" alt="">
+              </div>
+              <div class="badge-text">
+                <h4 class="badge-title">Badge Title</h4>
+                <p class="badge-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+              </div>
+            </div>
+
+            </div>
+
+            <div class="col-6 p-0">
+              <div class="badge-box-ver">
+              <div class="badge-icon bg-white">
+                <img src="../assets/images/toy.png" alt="">
+              </div>
+              <div class="badge-text">
+                <h4 class="badge-title">Badge Title</h4>
+                <p class="badge-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+              </div>
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-3 p-0">
+          <img src="../assets/images/class_01-690x506.jpg" class="w-100" alt="">
+        </div>
+        <div class="col-3 p-0">
+          <img src="../assets/images/class_02-690x506.jpg" class="w-100" alt="">
+        </div>
+        <div class="col-3 p-0">
+          <img src="../assets/images/class_03-690x506.jpg" class="w-100" alt="">
+        </div>
+        <div class="col-3 p-0">
+          <img src="../assets/images/class_04-690x506.jpg" class="w-100" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -14,6 +123,9 @@ export default {
 <style lang="scss" scoped>
  @import '../assets/style/variables.scss';
 
+.debug-col{
+  border: 2px solid white;
+}
  
  
 </style>

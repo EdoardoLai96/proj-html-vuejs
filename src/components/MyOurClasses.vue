@@ -1,5 +1,6 @@
 <template>
-  <section id="ourclasses" class="debug-container container">
+  <section id="ourclasses" class="debug-container">
+    <div class="container ">
       <div class="row debug-row">
         <div class="col debug-col text-center">
         <h2>Welcome to Fable</h2>
@@ -175,6 +176,7 @@
 
          </div>
       </div>
+    </div>
   </section>
 </template>
 

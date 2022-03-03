@@ -12,8 +12,8 @@
         <div class="row">
 
           <div class="col debug-col d-flex justify-content-center">
-            <div class="badge-box-hor">
-              <div class="badge-icon-primary">
+            <div class="badge-box-ver">
+              <div class="badge-icon prim">
                 <img src="../assets/images/stroller_alt.png" alt="">
               </div>
               <div class="badge-text">
@@ -24,8 +24,8 @@
           </div>
 
           <div class="col debug-col d-flex justify-content-center">
-            <div class="badge-box-hor">
-              <div class="badge-icon-secondary">
+            <div class="badge-box-ver">
+              <div class="badge-icon sec">
                 <img src="../assets/images/stroller_alt.png" alt="">
               </div>
               <div class="badge-text">
@@ -36,8 +36,8 @@
           </div>
 
           <div class="col debug-col d-flex justify-content-center">
-            <div class="badge-box-hor">
-              <div class="badge-icon-primary">
+            <div class="badge-box-ver">
+              <div class="badge-icon prim">
                 <img src="../assets/images/stroller_alt.png" alt="">
               </div>
               <div class="badge-text">
@@ -48,8 +48,8 @@
           </div>
 
           <div class="col debug-col d-flex justify-content-center">
-            <div class="badge-box-hor">
-              <div class="badge-icon-secondary">
+            <div class="badge-box-ver prim">
+              <div class="badge-icon sec">
                 <img src="../assets/images/stroller_alt.png" alt="">
               </div>
               <div class="badge-text">
@@ -76,6 +76,13 @@ export default {
 <style lang="scss" scoped>
  @import '../assets/style/variables.scss';
 
+.badge-icon.prim{
+  background-color: $primaryColor;
+}
+ 
+.badge-icon.sec{
+  background-color: $secondaryColor;
+}
  
  
 </style>
