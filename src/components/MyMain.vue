@@ -1,6 +1,8 @@
 <template>
   <div>
       <MyJumbotron/>
+      <MyCallToAction/>
+      <MyWelcome/>
       <MyOverview/>
       <MyOurClasses/>
       <MyGoals/>
@@ -11,6 +13,8 @@
 
 <script>
 import MyJumbotron from '../components/MyJumbotron'
+import MyCallToAction from '../components/partials/MyCallToAction'
+import MyWelcome from '../components/MyWelcome'
 import MyOverview from '../components/MyOverview'
 import MyOurClasses from '../components/MyOurClasses'
 import MyGoals from '../components/MyGoals'
@@ -22,6 +26,8 @@ export default {
     name: "MyMain",
     components:{
         MyJumbotron,
+        MyCallToAction,
+        MyWelcome,
         MyOverview,
         MyOurClasses,
         MyGoals,
@@ -37,4 +43,4 @@ export default {
 
  
  
-</style>
+</style> 
