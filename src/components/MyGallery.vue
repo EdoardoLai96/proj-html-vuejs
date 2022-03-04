@@ -47,12 +47,6 @@ export default {
     margin: auto;
   }
 
-  .slider-button{
-
-    border: 1px solid white;
-    height: 10px;
-    width: 40px;
-  }
   
 }
  

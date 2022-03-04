@@ -69,6 +69,7 @@ header{
       background-color: $primaryColor;
       color: white;
       cursor: pointer;
+      transition: background-color 0.4s;
     }
     .nav_icon{
       transform: scale(0.8);

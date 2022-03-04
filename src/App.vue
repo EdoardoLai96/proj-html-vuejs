@@ -29,6 +29,7 @@ export default {
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
 
+
   #app{
     background-color: white;
   }

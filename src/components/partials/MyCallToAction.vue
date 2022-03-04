@@ -1,9 +1,9 @@
 <template>
-  <div class="cta">
+  <div class="cta py-2">
       <div class="container px-5 py-3">
         <div class="row">
             <div class="col-7">
-                <h3>How To Enroll Your Child to a Class?</h3>
+                <h3 class="fs-4">How To Enroll Your Child to a Class?</h3>
             </div>
             <div class="col-5 text-center justify-content-center">
                 <button class="ms_btn_secondary">

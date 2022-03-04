@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+@import "~@fontsource/indie-flower/400.css";
+@import "~@fontsource/orbitron/400.css";
+
+
+// per fare lo zigzag arancione, scrivere "/\/\/\/" e usare il font orbitron
+.orbitron{
+  font-family: "Orbitron";
+  color: #fe6601;
+}
+
 //Debug
 .debug-col{
     background-color: #1bafe4;
@@ -35,6 +45,14 @@
     font-size: 0.6rem;
     border: 2px solid white;
 }    
+
+.slider-button{
+
+  border: 1px solid white;
+  height: 13px;
+  width: 40px;
+}
+
   //Badges//
 
 
@@ -53,6 +71,7 @@
                 text-align: center;
                 font-size: 1rem;
                 margin: 0.7rem 0;
+                color: #554e9e;
             }
             .badge-caption{
                 font-size: 0.8rem;
