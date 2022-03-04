@@ -89,10 +89,9 @@
     padding: 1rem;
       .badge-icon-primary{
           background-color: #fe6601;
-          padding: 2rem ;
+          padding: 1rem ;
           border-radius: 50%;
           img{
-              filter: invert(1);
               height: 25px;
           }
         }
@@ -102,6 +101,8 @@
                 text-align: left;
                 font-size: 1rem;
                 margin: 0.7rem 0;
+                color: #554e9e;
+
             }
             .badge-caption{
                 font-size: 0.8rem;
