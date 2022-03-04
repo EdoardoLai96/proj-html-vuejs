@@ -26,6 +26,9 @@ export default {
 <style lang="scss">
 @import './assets/style/general.scss';
 @import './assets/style/variables.scss';
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+
   #app{
     background-color: white;
   }

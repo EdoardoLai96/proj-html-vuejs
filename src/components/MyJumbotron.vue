@@ -1,9 +1,9 @@
 <template>
-  <section id="jumbotron" class="debug-container">
-    <div class="debug-container container px-5">
+  <section id="jumbotron" >
+    <div class="container px-5">
 
-      <div class="row debug-row">
-        <div class="col debug-col py-5 col-5 flex-column">
+      <div class="row">
+        <div class="col py-5 col-5 flex-column">
           <h3>Friendly Atmosphere</h3>
           <h3>Welcoming Place</h3>
           <h3>For Every Child</h3>
