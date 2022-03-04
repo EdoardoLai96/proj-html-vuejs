@@ -1,7 +1,7 @@
 <template>
-  <div>
-      
-  </div>
+  <section id="map">
+    <img src="../assets/images/map_full.jpg" alt="">
+  </section>
 </template>
 
 <script>
