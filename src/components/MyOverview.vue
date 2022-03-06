@@ -41,17 +41,19 @@
 
           </div>
           <div class="col ">
-              <div class="current-img mb-3">
+              <div class="current-img mb-3 position-relative">
+                <i class="fa-solid fa-chevron-right position-absolute top-50 end-0 p-2  fs-5 "></i>
+                <i class="fa-solid fa-chevron-left  position-absolute top-50  p-2  fs-5 "></i>
                 <img class="img-fluid" src="../assets/images/gallery_08-690x506.jpg" alt="">
               </div>
-              <div class="row g-2">
-                <div class="col p-0">
-                  <img class="ms_thumbnail" src="../assets/images/gallery_07-690x506.jpg" alt="">
+              <div class="row g-3">
+                <div class="col">
+                  <img class="ms_thumbnail ms_active" src="../assets/images/gallery_07-690x506.jpg" alt="">
                 </div>
-                <div class="col p-0">
+                <div class="col">
                   <img class="ms_thumbnail" src="../assets/images/gallery_01-690x506.jpg" alt="">
                 </div>
-                <div class="col p-0" >
+                <div class="col" >
                   <img class="ms_thumbnail" src="../assets/images/gallery_08-690x506.jpg" alt="">
 
                 </div>
@@ -86,5 +88,18 @@ width: 100%;
 object-fit: contain;
 }
  
- 
+// effetto per dare alle thumbanils l'effetto di selezionato 
+.ms_active{
+    border-bottom: 2px solid red;
+    padding-bottom: 1rem;
+}
+
+// posizionamento e stile delle freccette per scorrere le immagini
+.current-img{
+  i{
+    color: white;
+    background-color: $primaryColor;
+  }
+}
+
 </style>
