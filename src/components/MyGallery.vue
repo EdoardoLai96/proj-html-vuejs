@@ -1,7 +1,7 @@
 <template>
   <section id="mygallery" class="d-flex align-items-center">
       <div class="container">
-        <div class="row">
+        <div class="row mx-5">
           <div class="col py-5">
             <div class="img_box my-3">
               <img class="quote" src="../assets/images/quote_alt.png" alt="">
