@@ -1,15 +1,15 @@
 <template>
-  <section id="whatsnew" class="d-flex align-items-center debug-container">
-    <div class="container">
-          <div class="row debug-row">
-        <div class="col debug-col text-center">
+  <section id="whatsnew" class="d-flex align-items-center py-5">
+    <div class="container py-2">
+          <div class="row ">
+        <div class="col text-center">
         <h2>Welcome to Fable</h2>
             <p>Family daycare, preschool, and kindergarten</p>
             <p>/\/\/\/</p>
 
         </div>
       </div>
-      <div class="row debug row">
+      <div class="row  row">
         <div class="col-4 p-3">
           <MyCardVert/>
         </div>
