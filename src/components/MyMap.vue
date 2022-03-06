@@ -1,6 +1,6 @@
 <template>
   <section id="map">
-    <img src="../assets/images/map_full.jpg" alt="">
+    <img class="w-100" src="../assets/images/map_full.jpg" alt="">
   </section>
 </template>
 

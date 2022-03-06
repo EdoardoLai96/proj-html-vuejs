@@ -1,7 +1,7 @@
 <template>
   <main>
       <MyJumbotron/>
-      <MyCallToAction/>
+      <MyCallToAction :cta="ctas[0]"/>
       <MyWelcome/>
       <MyOverview/>
       <MyOurClasses/>
@@ -39,6 +39,20 @@ export default {
         MyWhatsNew,
         MyGallery,
         MyMap
+    },
+    data(){
+        return{
+            ctas : [
+                {   
+                    text: "How to Enroll Your Child to a Class?",
+                    button: "LEARN MORE"
+                },
+                {   
+                    text: "See Our Kindergarten Photo Gallery!",
+                    button: "VIEW GALLERY"
+                },
+            ]
+        }
     }
 
 }

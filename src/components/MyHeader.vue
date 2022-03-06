@@ -1,43 +1,27 @@
 <template>
+
+
   <header class="">
     <div  class="container  px-5 align-items-center">
       <div class="row  justify-content-between"> 
+
+        <!-- PARTE HEADER DI SINISTRA CON LOGO  -->
+
         <div class="col-5 d-flex align-items-center justify-content-center">
           <div class="img-box d-flex">
           <img src="../assets/images/logo_cropped.png" alt="">
           </div>
         </div>
 
-        <div class="col-7 d-flex justify-content-center">
-        <a href="#jumbotron" class=" nav-item seco mx-2 py-2 px-3 text-center">
-          <i class="fs-4 fa-solid fa-house"></i>
-          <p class="text-center mb-0">Text</p>
+        <!-- PARTE HEADER DI SINISTRA CON NAV  -->
+
+        <nav class="col-7 d-flex justify-content-center">
+        <!-- ELEMENTI INSERITI DINAMICAMENTE DA DATA TRAMITE CICLO FOR  -->
+        <a v-for="(nav_item, index) in nav_items" :key="index" :href="nav_item.href" class=" nav-item seco mx-2 py-2 px-3 text-center">
+          <i :class="'fs-4 fa-solid fa-' + nav_item.icon_name"></i>
+          <p class="text-center mb-0">{{nav_item.text}}</p>
         </a>
-        <a href="#welcome" class=" nav-item seco mx-2 py-2 px-3 text-center">
-          <i class="fs-4 fa-solid fa-file-lines"></i>
-          <p class="text-center mb-0">Text</p>
-        </a>
-        <a href="#overview" class=" nav-item seco mx-2 py-2 px-3 text-center">
-          <i class="fs-4 fa-solid fa-print"></i>
-          <p class="text-center mb-0">Text</p>
-        </a>
-        <a href="#ourclasses" class=" nav-item seco mx-2 py-2 px-3 text-center">
-          <i class="fs-4 fa-solid fa-cart-arrow-down"></i>
-          <p class="text-center mb-0">Text</p>
-        </a>
-        <a href="#mygoals" class=" nav-item seco mx-2 py-2 px-3 text-center">
-         <i class="fs-4 fa-solid fa-flask"></i>
-          <p class="text-center mb-0">Text</p>
-        </a>
-        <a href="#contactus" class=" nav-item seco mx-2 py-2 px-3 text-center">
-          <i class="fs-4 fa-solid fa-headset"></i>
-          <p class="text-center mb-0">Text</p>
-        </a>
-        <a href="#contactus" class=" nav-item seco mx-2 py-2 px-3 text-center">
-          <i class="fs-4 fa-regular fa-envelope"></i>
-          <p class="text-center mb-0">Text</p>
-        </a>
-        </div>
+        </nav>
 
       </div>
     </div>
@@ -46,8 +30,51 @@
 
 <script>
 export default {
-    name: "MyHeader"
+    name: "MyHeader",
 
+    data(){
+      return{
+
+        // ARRAY CHE CONTIENE TUTTI I NAV ITEMS, SE SI VUOLE AGGIUNGERE UNA VOCE AL MENU' BASTA AGGIUNGERE IL DATO QUA SOTTOFORMA DI OGGETTO
+        nav_items : [
+          {
+            href: "#jumbotron",
+            text: "Home",
+            icon_name: "house"
+          },
+          {
+            href: "#welcome",
+            text: "Pages",
+            icon_name: "file-lines"
+          },
+          {
+            href: "#overview",
+            text: "Blog",
+            icon_name: "print"
+          },
+          {
+            href: "#ourclasses",
+            text: "Shop",
+            icon_name: "cart-arrow-down"
+          },
+          {
+            href: "#mygoals",
+            text: "Shortcodes",
+            icon_name: "flask"
+          },
+          {
+            href: "#contactus",
+            text: "Support",
+            icon_name: "headset"
+          },
+          {
+            href: "#contactus",
+            text: "Contact",
+            icon_name: "envelope"
+          },
+        ]
+      }
+    }
 }
 </script>
 

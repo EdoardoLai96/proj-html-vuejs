@@ -3,11 +3,12 @@
       <div class="container px-5 py-3">
         <div class="row mx-5">
             <div class="col-7">
-                <h3 class="fs-4">How To Enroll Your Child to a Class?</h3>
+                <h3 class="fs-4">{{cta.text}}</h3>
             </div>
             <div class="col-5 text-center justify-content-center">
                 <button class="ms_btn_secondary">
-                    LEARN MORE >
+                    {{cta.button}} 
+                    <i class="fa-solid fa-chevron-right ms-2"></i>
                 </button>
             </div>
         </div>
@@ -17,7 +18,10 @@
 
 <script>
 export default {
-    name: "MyCallToAction"
+    name: "MyCallToAction",
+    props: {
+      cta : Object
+    }
 
 }
 </script>

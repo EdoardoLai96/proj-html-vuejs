@@ -11,55 +11,9 @@
         </div>
         <div class="row">
 
-          <div class="col debug d-flex justify-content-center">
-            <div class="badge-box-ver">
-              <div class="badge-icon bg-prim">
-                <img src="../assets/images/schoolbag_alt.png" alt="">
-              </div>
-              <div class="badge-text">
-                <h4 class="badge-title  my-3">Badge Title</h4>
-                <p class="badge-caption text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione! Perferendis inventore nam aliquid minima pariatur </p>
-              </div>
-            </div>
+          <div v-for="(badgeBox, index) in badgeBoxes" :key="index" class="col debug d-flex justify-content-center">
+            <MyBadgeBox :badgeBox="badgeBoxes[index]" />
           </div>
-
-          <div class="col debug d-flex justify-content-center">
-            <div class="badge-box-ver">
-              <div class="badge-icon bg-seco">
-                <img src="../assets/images/stroller_alt.png" alt="">
-              </div>
-              <div class="badge-text">
-                <h4 class="badge-title  my-3">Badge Title</h4>
-                <p class="badge-caption text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione! Perferendis inventore nam aliquid minima pariatur </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col debug d-flex justify-content-center">
-            <div class="badge-box-ver">
-              <div class="badge-icon bg-prim">
-                <img src="../assets/images/globe_alt.png" alt="">
-              </div>
-              <div class="badge-text">
-                <h4 class="badge-title  my-3">Badge Title</h4>
-                <p class="badge-caption text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione! Perferendis inventore nam aliquid minima pariatur </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col debug d-flex justify-content-center">
-            <div class="badge-box-ver">
-              <div class="badge-icon bg-seco">
-                <img src="../assets/images/bell_alt.png" alt="">
-              </div>
-              <div class="badge-text">
-                <h4 class="badge-title  my-3">Badge Title</h4>
-                <p class="badge-caption text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione! Perferendis inventore nam aliquid minima pariatur </p>
-              </div>
-            </div>
-          </div>
-
-       
 
         </div>
       </div>
@@ -67,8 +21,44 @@
 </template>
 
 <script>
+import MyBadgeBox from "../components/partials/MyBadgeBox.vue"
+
 export default {
-    name: "MyWelcome"
+    name: "MyWelcome",
+    components: {
+      MyBadgeBox
+    },
+    data(){
+      return{
+        badgeBoxes: [
+        {
+          title: "Morbi Etos",
+          text: "Custom long text 1 very very very very long  the first of 4 cards, really long text used as a filler to fill the paragraph of the card",
+          background: "prim",
+          url: "../../badge-box-vert-icons/schoolbag_alt.png"
+        },
+        {
+          title: "Congue Gravida",
+          text: "Custom long text 2 very very very very long  the second of 4 cards, really long text used as a filler to fill the paragraph of the card",
+          background: "seco",
+          url: "../../badge-box-vert-icons/stroller_alt.png"
+        },
+        {
+          title: "Maecenas Node",
+          text: "Custom long text 3 very very very very long  the third of 4 cards, really long text used as a filler to fill the paragraph of the card",
+          background: "prim",
+          url: "../../badge-box-vert-icons/globe_alt.png"
+        },
+        {
+          title: "Praesent Morbi",
+          text: "Custom long text 4 very very very very long  the fourth of 4 cards, really long text used as a filler to fill the paragraph of the card",
+          background: "seco",
+          url: "../../badge-box-vert-icons/bell_alt.png"
+        },
+          ]
+
+      }
+    }
 
 }
 </script>
