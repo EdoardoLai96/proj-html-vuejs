@@ -3,7 +3,7 @@
     <div class="ms_card justify-content-between d-flex bg-seco text-white">
         <div class="ms_card__text-box  d-flex flex-column justify-content-between p-3">
             <div class="ms_card__text-box-top">
-                <h2 class="ms_card_title fs-3 mb-0">Little Lambs</h2>
+                <h2 class="ms_card_title fs-4 mb-0">Little Lambs</h2>
                 <p class="fw-light">Class Name</p>
             </div>
             <div class="ms_card__text-box-bottom">

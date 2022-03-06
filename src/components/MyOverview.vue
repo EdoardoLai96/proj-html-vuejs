@@ -1,7 +1,7 @@
 <template>
   <section id="overview" >
       <div class="container px-5 py-5">
-        <div class="row">
+        <div class="row mx-5">
           <div class="col-5 d-flex flex-column">
 
             <div class="btn-box">

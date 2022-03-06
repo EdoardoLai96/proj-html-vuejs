@@ -1,15 +1,15 @@
 <template>
   <section id="ourclasses" class="p-5">
     <div class="container">
-      <div class="row ">
+      <div class="row mx-5">
         <div class="col  text-center">
-        <h2 class="seco">Welcome to Fable</h2>
-            <p class="text-secondary">Family daycare, preschool, and kindergarten</p>
+        <h2 class="seco fw-light">Our Classes</h2>
+            <p class="text-secondary">Our preschool program has four dedicated classes</p>
             <p class="orbitron mb-5">/\/\/\/</p>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row mx-5">
         <div class="col ">
           <p class="seco fs-4 pb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum voluptas, odio debitis sit inventore voluptate delectus nobis, odit.</p>
         </div>
@@ -20,7 +20,7 @@
         </div>
       </div>
 
-      <div class="row  g-4 pb-2">
+      <div class="row mx-5  g-4 pb-2">
 
          <div class="col-6">
            <MyCardHor/>

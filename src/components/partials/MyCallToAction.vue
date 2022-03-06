@@ -1,7 +1,7 @@
 <template>
-  <div class="cta py-2 bg-seco">
+  <div class="cta px-5 py-2 bg-seco">
       <div class="container px-5 py-3">
-        <div class="row">
+        <div class="row mx-5">
             <div class="col-7">
                 <h3 class="fs-4">How To Enroll Your Child to a Class?</h3>
             </div>
