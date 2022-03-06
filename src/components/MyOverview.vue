@@ -13,7 +13,7 @@
             </button>
             </div>
 
-            <p class="fs-5 mt-4">
+            <p class="fs-3 mt-4 lh-sm seco">
               Our philosophy is learning through play as we offer a stimulating environment for children.
             </p>
 
@@ -23,8 +23,8 @@
                 <img src="../assets/images/clock_alt.png" alt="">
               </div>
               <div class="badge-text">
-                <h4 class="badge-title">Badge Title</h4>
-                <p class="badge-caption text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione!</p>
+                <h4 class="badge-title fs-4 fw-light">Badge Title</h4>
+                <p class="badge-caption fs-6 text-secondary fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione!</p>
               </div>
             </div>
 
@@ -33,8 +33,8 @@
                 <img src="../assets/images/diagram_alt.png" alt="">
               </div>
               <div class="badge-text">
-                <h4 class="badge-title">Badge Title</h4>
-                <p class="badge-caption text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione!</p>
+                <h4 class="badge-title fs-4 fw-light">Badge Title</h4>
+                <p class="badge-caption fs-6 text-secondary fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione!</p>
               </div>
             </div>
 
@@ -42,8 +42,8 @@
           </div>
           <div class="col ">
               <div class="current-img mb-3 position-relative">
-                <i class="fa-solid fa-chevron-right position-absolute top-50 end-0 p-2  fs-5 "></i>
-                <i class="fa-solid fa-chevron-left  position-absolute top-50  p-2  fs-5 "></i>
+                <i class="fa-solid fa-chevron-right position-absolute top-50 end-0 p-2  fs-5 bg-prim text-white"></i>
+                <i class="fa-solid fa-chevron-left  position-absolute top-50  p-2  fs-5  bg-prim text-white"></i>
                 <img class="img-fluid" src="../assets/images/gallery_08-690x506.jpg" alt="">
               </div>
               <div class="row g-3">
@@ -92,14 +92,6 @@ object-fit: contain;
 .ms_active{
     border-bottom: 2px solid red;
     padding-bottom: 1rem;
-}
-
-// posizionamento e stile delle freccette per scorrere le immagini
-.current-img{
-  i{
-    color: white;
-    background-color: $primaryColor;
-  }
 }
 
 </style>

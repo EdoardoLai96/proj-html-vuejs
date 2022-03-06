@@ -1,3 +1,21 @@
 $primaryColor: #fe6601;
 $secondaryColor: #554e9e;
 $customGrey: #e8e5e7;
+
+
+.prim{
+    color: $primaryColor;
+}
+
+.bg-prim{
+    background-color: $primaryColor;
+}
+
+.seco{
+    color: $secondaryColor;
+}
+
+.bg-seco{
+    background-color: $secondaryColor;
+}
+

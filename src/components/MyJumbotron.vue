@@ -11,9 +11,9 @@
       <div class="row">
         <div class="col py-5 col-5 flex-column">
           <div class="text-box text-center">
-            <h3 class="indie_flower text-start">Friendly Atmosphere</h3>
-            <h3 class="fw-bold text-start">Welcoming Place</h3>
-            <h3 class="fw-lighter text-start">For Every Child</h3>
+            <h3 class="indie_flower text-start prim">Friendly Atmosphere</h3>
+            <h3 class="fw-bold text-start seco">Welcoming Place</h3>
+            <h3 class="fw-lighter text-start seco">For Every Child</h3>
             <button class="ms_btn_primary d-block">BUY THIS THEME NOW</button>
           </div>
         </div>
@@ -49,10 +49,6 @@ export default {
 
   .indie_flower{
     font-family: "Indie Flower";
-    color: $primaryColor;
-  }
-  h3{
-    color: $secondaryColor;
   }
 
 .slider-button{

@@ -1,5 +1,5 @@
 <template>
-  <div class="cta py-2">
+  <div class="cta py-2 bg-seco">
       <div class="container px-5 py-3">
         <div class="row">
             <div class="col-7">
@@ -26,7 +26,6 @@ export default {
  @import '../../assets/style/variables.scss';
 
   .cta{
-      background-color: $secondaryColor;
       color: white;
       h3{
         margin-bottom: 0;
