@@ -3,7 +3,7 @@
     <div class="container py-2">
           <div class="row ">
         <div class="col text-center">
-        <h2 class="seco fw-light">Welcome to Fable</h2>
+        <h2 class="seco fw-lighter fs-1">What's New</h2>
             <p class="text-secondary fw-light">Family daycare, preschool, and kindergarten</p>
             <p class="orbitron">/\/\/\/</p>
 
