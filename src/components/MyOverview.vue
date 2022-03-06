@@ -17,24 +17,14 @@
               Our philosophy is learning through play as we offer a stimulating environment for children.
             </p>
 
-
-            <div class="badge-box-hor">
+ 
+            <div v-for="(badgeBox, index) in badgeBoxes" :key="index" class="badge-box-hor">
               <div class="badge-icon-primary">
-                <img src="../assets/images/clock_alt.png" alt="">
+                <img :src="badgeBox.url" alt="">
               </div>
               <div class="badge-text">
-                <h4 class="badge-title fs-4 fw-light">Badge Title</h4>
-                <p class="badge-caption fs-6 text-secondary fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione!</p>
-              </div>
-            </div>
-
-            <div class="badge-box-hor">
-              <div class="badge-icon-primary">
-                <img src="../assets/images/diagram_alt.png" alt="">
-              </div>
-              <div class="badge-text">
-                <h4 class="badge-title fs-4 fw-light">Badge Title</h4>
-                <p class="badge-caption fs-6 text-secondary fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione!</p>
+                <h4 class="badge-title fs-4 fw-light">{{badgeBox.title}}</h4>
+                <p class="badge-caption fs-6 text-secondary fw-light">{{badgeBox.text}}</p>
               </div>
             </div>
 
@@ -65,8 +55,26 @@
 </template>
 
 <script>
+
 export default {
-    name: "MyOverview"
+    name: "MyOverview",
+    data(){
+      return{
+        badgeBoxes : [
+          {
+            title: "Full Day Sessions",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione!",
+            url: "../badge-box-hor-icons/clock_alt.png"
+          },
+          {
+            title: "Varied Classes",
+            text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione!",
+            url: "../badge-box-hor-icons/diagram_alt.png"
+
+          },
+        ]
+      }
+    }
 
 }
 </script>

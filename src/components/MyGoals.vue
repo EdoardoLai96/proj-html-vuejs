@@ -97,16 +97,16 @@
 
       <div class="row">
         <div class="col-3 p-0">
-          <img src="../assets/images/class_01-690x506.jpg" class="w-100" alt="">
+          <img src="" class="w-100" alt="">
         </div>
         <div class="col-3 p-0">
-          <img src="../assets/images/class_02-690x506.jpg" class="w-100" alt="">
+          <img src="" class="w-100" alt="">
         </div>
         <div class="col-3 p-0">
-          <img src="../assets/images/class_03-690x506.jpg" class="w-100" alt="">
+          <img src="" class="w-100" alt="">
         </div>
         <div class="col-3 p-0">
-          <img src="../assets/images/class_04-690x506.jpg" class="w-100" alt="">
+          <img src="" class="w-100" alt="">
         </div>
       </div>
     </div>
