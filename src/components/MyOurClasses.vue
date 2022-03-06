@@ -1,27 +1,26 @@
 <template>
-  <section id="ourclasses">
-    <div class="container ">
+  <section id="ourclasses" class="p-5">
+    <div class="container">
       <div class="row ">
         <div class="col  text-center">
-        <h2>Welcome to Fable</h2>
-            <p>Family daycare, preschool, and kindergarten</p>
-            <p>/\/\/\/</p>
+        <h2 class="seco">Welcome to Fable</h2>
+            <p class="text-secondary">Family daycare, preschool, and kindergarten</p>
+            <p class="orbitron mb-5">/\/\/\/</p>
         </div>
       </div>
 
-      <div class="row ">
+      <div class="row">
         <div class="col ">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum voluptas, odio debitis sit inventore voluptate delectus nobis, odit, pariatur quisquam sint quo! Et eius numquam tempore eligendi! Voluptas, explicabo? Rem.</p>
+          <p class="seco fs-4 pb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum voluptas, odio debitis sit inventore voluptate delectus nobis, odit.</p>
         </div>
-
         <div class="col ">
-          <p>
+          <p class="text-secondary pt-2 right-par">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed molestiae, quod saepe tempora odit placeat voluptatem corporis accusantium cum velit dolores veritatis, est debitis in magnam beatae! Quod, similique amet.
           </p>
         </div>
       </div>
 
-      <div class="row  gx-4 gy-4">
+      <div class="row  g-4 pb-2">
 
          <div class="col-6">
            <MyCardHor/>
@@ -59,11 +58,9 @@ export default {
  @import '../assets/style/variables.scss';
 
 
+.right-par{
+  font-size: 0.9rem;
+}
 
-
-/// .debug-card{
-//   height: 200px;
-//   border: 1px solid black;
-// }
  
 </style>
