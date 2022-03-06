@@ -79,6 +79,29 @@
             }
     }
 
+    // Variante del badge box più piccola che si trova nella sezione my goals,
+    // cambia di fatto solo il padding della badge-icon, ma ho pensato che per la manutenzione fosse pià comodo avere due stili separati 
+
+  .badge-box-ver_small{
+    padding: 1rem;
+      .badge-icon{
+          padding: 1.2rem ;
+          border-radius: 50%;
+          width: min-content;
+          margin: auto;
+        }
+            .badge-title{
+                text-align: center;
+                font-size: 1rem;
+                margin: 0.7rem 0;
+                color: #554e9e;
+            }
+            .badge-caption{
+                font-size: 0.8rem;
+                text-align: center;
+            }
+    }
+
 
     // DISPOSIZIONE ORIZZONTALE
 

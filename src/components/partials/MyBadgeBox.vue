@@ -14,7 +14,7 @@
 export default {
     name: "MyBadgeBox",
     props: {
-        badgeBox: Object
+        badgeBox: Object,
     }
 
 }

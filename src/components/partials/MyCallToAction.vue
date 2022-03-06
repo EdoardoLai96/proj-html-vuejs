@@ -1,5 +1,20 @@
 <template>
-  <div class="cta px-5 py-2 bg-seco">
+  <div v-if="cta.bg_custom == true" class="cta px-5 py-2">
+      <div class="container px-5 py-3">
+        <div class="row mx-5">
+            <div class="col-7">
+                <h3 class="fs-4">{{cta.text}}</h3>
+            </div>
+            <div class="col-5 text-center justify-content-center">
+                <button class="ms_btn_secondary">
+                    {{cta.button}} 
+                    <i class="fa-solid fa-chevron-right ms-2"></i>
+                </button>
+            </div>
+        </div>
+      </div>
+  </div>
+  <div v-else class="cta px-5 py-2 bg-seco">
       <div class="container px-5 py-3">
         <div class="row mx-5">
             <div class="col-7">

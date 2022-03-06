@@ -54,7 +54,7 @@ export default {
             title: "Bouncy Bears",
             name: "Class Name",
             age_range: "2-3",
-            age_class: "Month Olds",
+            age_class: "Year Olds",
             size: 12,
             url: "../../card-hor-images/card-hor_02.jpg"
 
@@ -63,7 +63,7 @@ export default {
             title: "Tender Hearts",
             name: "Class Name",
             age_range: "3-4",
-            age_class: "Month Olds",
+            age_class: "Year Olds",
             size: 15,
             url: "../../card-hor-images/card-hor_03.jpg"
           },
