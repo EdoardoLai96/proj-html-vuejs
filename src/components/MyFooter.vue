@@ -1,11 +1,11 @@
 <template>
   <footer id="contactus">
-    <div class="container">
+    <div class="container py-5">
       <div class="row">
         <div class="col text-center">
-        <h2>Welcome to Fable</h2>
-            <p>Family daycare, preschool, and kindergarten</p>
-            <p>/\/\/\/</p>
+        <h2 class="seco fw-light">Welcome to Fable</h2>
+            <p class="text-secondary fw-light">Family daycare, preschool, and kindergarten</p>
+            <p class="orbitron">/\/\/\/</p>
         </div>
       </div>
       <div class="row">
@@ -90,8 +90,9 @@ export default {
 
 .form-container-left{
   input{
-    height: calc((165px - 2rem) / 3);
+  height: calc((165px - 2rem) / 3);
   outline: none;
+  border: 1px solid rgb(196, 196, 196);
   }
 }
 
@@ -102,6 +103,11 @@ export default {
 
 .form-container-right{
   height: 200px;
+  textarea{
+  border: 1px solid rgb(196, 196, 196);
+
+  }
+  
 }
  
  
