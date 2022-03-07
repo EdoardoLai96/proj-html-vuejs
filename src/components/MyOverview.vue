@@ -32,12 +32,12 @@
 
           </div>
 
-          <!-- STRUTTURA HTML DELLO SLIDER, FUNZIONA TRAMITE 3 FUNZIONI RICHIAMATE TRAMITE LA SINTASSI "@", PER FUNZIONI NEL DETTAGLIO VEDERE SCRIPT PIU' IN BASSO  -->
+          <!-- STRUTTURA HTML DELLO SLIDER (MANUALE), FUNZIONA TRAMITE 3 FUNZIONI RICHIAMATE TRAMITE LA SINTASSI "@", PER FUNZIONI NEL DETTAGLIO VEDERE SCRIPT PIU' IN BASSO  -->
 
           <div class="col ">
               <div class="current-img mb-3 position-relative">
-                <i @click="nextPic" class="fa-solid fa-chevron-right position-absolute top-50 end-0 p-2  fs-5 bg-prim text-white"></i>
-                <i @click="previousPic" class="fa-solid fa-chevron-left  position-absolute top-50  p-2  fs-5  bg-prim text-white"></i>
+                <i @click="nextPic" class="fa-solid ms_cursor-pointer fa-chevron-right position-absolute top-50 end-0 p-2  fs-5 bg-prim text-white"></i>
+                <i @click="previousPic" class="fa-solid ms_cursor-pointer fa-chevron-left  position-absolute top-50  p-2  fs-5  bg-prim text-white"></i>
                 <img class="img-fluid" :src="currentImages[active].url" alt="">
               </div>
               <div class="row g-3">
@@ -86,6 +86,7 @@ export default {
       }
     },
     methods: {
+      // QUESTA E' LA FUNZIONE CHE PERMETTE DI SCORRERE IN AVANTI TRAMITE
       nextPic(){
         if(this.active < this.currentImages.length - 1){
           this.active++
@@ -120,6 +121,10 @@ export default {
 .ms_thumbnail{
 width: 100%;
 object-fit: contain;
+}
+
+.ms_cursor-pointer{
+  cursor: pointer;
 }
  
 // effetto per dare alle thumbanils l'effetto di selezionato 
