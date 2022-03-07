@@ -1,5 +1,6 @@
 <template>
-  <section id="mygallery" class="d-flex align-items-center">
+  <section id="mygallery" class="d-flex align-items-center position-relative">
+    <img class="position-absolute active_img_slider" :src="galleryPics[active].url" alt="">
       <div class="container">
         <div class="row mx-5">
           <div class="col py-5">
@@ -10,12 +11,7 @@
               <div class="text-white text-center">_____</div>
               <div class="quote_name text-center text-white my-2">Cecil J. Kirk</div>
               <div class="slider-progress text-center mt-5">
-                <div class="slider-button d-inline-block mx-1"> </div>
-                <div class="slider-button d-inline-block mx-1"> </div>
-                <div class="slider-button d-inline-block mx-1"> </div>
-                <div class="slider-button d-inline-block mx-1"> </div>
-                <div class="slider-button d-inline-block mx-1"> </div>
-                <div class="slider-button d-inline-block mx-1"> </div>
+                <div v-for="(slider_button , index) in galleryPics" :key="index" class="slider-button d-inline-block mx-1" :class="[index == active? 'active_slider_button' : '']"> </div>
               </div>
           </div>
         </div>
@@ -25,7 +21,50 @@
 
 <script>
 export default {
-    name: "MyGallery"
+    name: "MyGallery",
+    data(){
+      return{
+        galleryPics : [
+          {
+            url: "../slider_gallery-images/blog_09-1024x614.jpg"
+          },
+          {
+            url: "../slider_gallery-images/blog_08-1024x614.jpg"
+          },
+          {
+            url: "../slider_gallery-images/parallax_02.jpg"
+          },
+          {
+            url: "../slider_gallery-images/blog_10-1024x614.jpg"
+          },
+          {
+            url: "../slider_gallery-images/gallery_01.jpg"
+          },
+          {
+            url: "../slider_gallery-images/gallery_02.jpg"
+          },
+        ],
+        active: 0,
+        intervalId1: ""
+      }
+      
+    },
+    methods:{
+
+      makeActive(){
+        if(this.active < this.galleryPics.length ){
+          this.active++
+        }if(this.active == this.galleryPics.length ){
+          this.active = 0
+        }
+      },
+      stopInerval(){
+        clearInterval(this.makeActive)
+      }
+    },
+    mounted(){
+      this.intervalId1 = setInterval(this.makeActive, 3000)
+    }
 
 }
 </script>
@@ -34,7 +73,16 @@ export default {
  @import '../assets/style/variables.scss';
 
 #mygallery{
-  background-image: url('../assets/images/parallax_02.jpg');
+  .active_img_slider{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter:brightness(0.5);
+  }
+  .container{
+    z-index: 2;
+  }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,6 +95,10 @@ export default {
     margin: auto;
   }
 
+  .active_slider_button{
+    transform: translateY(-10px);
+    transition: 0.3s;
+  }
   
 }
  
