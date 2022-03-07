@@ -17,7 +17,8 @@
               Our philosophy is learning through play as we offer a stimulating environment for children.
             </p>
 
- 
+              <!-- QUA I BADGE BOXES SONO STATI AGGIUNTI NON COME COMPONENTE PER RENDERLI PIU' PERSONALIZZABILI (SONO DISPOSTI VERTICALMENTE), MA DI FATTO SONO SEMPRE LI STESSI -->
+
             <div v-for="(badgeBox, index) in badgeBoxes" :key="index" class="badge-box-hor">
               <div class="badge-icon-primary">
                 <img :src="badgeBox.url" alt="">
@@ -30,6 +31,9 @@
 
 
           </div>
+
+          <!-- STRUTTURA HTML DELLO SLIDER, FUNZIONA TRAMITE 3 FUNZIONI RICHIAMATE TRAMITE LA SINTASSI "@", PER FUNZIONI NEL DETTAGLIO VEDERE SCRIPT PIU' IN BASSO  -->
+
           <div class="col ">
               <div class="current-img mb-3 position-relative">
                 <i @click="nextPic" class="fa-solid fa-chevron-right position-absolute top-50 end-0 p-2  fs-5 bg-prim text-white"></i>

@@ -1,4 +1,8 @@
+
+
 <template>
+<!-- QUESTO COMPONENTE COMPRENDE UN SINGOLO ELEMENTO DEL MENU DI NAVIGAZIONE, TUTTI I DATI ARRIVANO DALL'ARRY "nav_items" UN ARRAY DEL COMPONENTE PADRE "MY HEADER"-->
+
         <a :href="nav_item.href" class="nav-item seco mx-2 py-2 px-3 text-center">
           <i class="fs-4"  :class="nav_item.icon_name"></i>
           <p class="text-center mb-0">{{nav_item.text}}</p>

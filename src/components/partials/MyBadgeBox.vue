@@ -1,4 +1,5 @@
 <template>
+<!-- QUESTO COMPONENTE E' IL BADGE BOX (GRANDE) DISPOSTO VERTICALMENTE USATO NELLA SEZIONE MYWELCOME -->
     <div class="badge-box-ver">
         <div class="badge-icon" :class="'bg-' + badgeBox.background">
             <img :src="badgeBox.url">

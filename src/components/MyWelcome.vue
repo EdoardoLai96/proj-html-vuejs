@@ -30,6 +30,7 @@ export default {
     },
     data(){
       return{
+        // ARRAY CONTENENTE TUTTI I BADGE BOXES E LE LORO PROPRIETA', PER AGGIUNGERNE O TOGLIERNE DA QUESTA SEZIONE BASTA AGIRE SU QUESTA LISTA
         badgeBoxes: [
         {
           title: "Morbi Etos",

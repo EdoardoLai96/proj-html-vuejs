@@ -29,7 +29,16 @@
 
 <script>
 export default {
-    name: "MyJumbotron"
+    name: "MyJumbotron",
+    data(){
+      return{
+        sliderImages: [
+          {
+
+          },
+        ]
+      }
+    }
 
 }
 </script>

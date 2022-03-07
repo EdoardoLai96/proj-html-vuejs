@@ -17,11 +17,9 @@
 
         <nav class="col-7 d-flex justify-content-center">
         <!-- ELEMENTI INSERITI DINAMICAMENTE DA DATA TRAMITE CICLO FOR  -->
+
         <MyNavItem v-for="(nav_item, index) in nav_items" :key="index"  :nav_item="nav_items[index]"/>
-        <!-- <a v-for="(nav_item, index) in nav_items" :key="index" :href="nav_item.href" class=" nav-item seco mx-2 py-2 px-3 text-center">
-          <i :class="'fs-4 fa-solid fa-' + nav_item.icon_name"></i>
-          <p class="text-center mb-0">{{nav_item.text}}</p>
-        </a> -->
+
         </nav>
 
       </div>
@@ -40,7 +38,7 @@ export default {
     data(){
       return{
 
-        // ARRAY CHE CONTIENE TUTTI I NAV ITEMS, SE SI VUOLE AGGIUNGERE UNA VOCE AL MENU' BASTA AGGIUNGERE IL DATO QUA SOTTOFORMA DI OGGETTO
+        // ARRAY CHE CONTIENE TUTTI I NAV ITEMS, SE SI VUOLE AGGIUNGERE UNA VOCE AL MENU' BASTA AGGIUNGERE IL DATO QUA SOTTOFORMA DI OGGETTO E AUTOMATICAMENTE SI POPOLERA' 
         nav_items : [
           {
             href: "#jumbotron",
