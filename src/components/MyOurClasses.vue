@@ -3,8 +3,8 @@
     <div class="container">
       <div class="row mx-5">
         <div class="col  text-center">
-        <h2 class="seco fw-light">Our Classes</h2>
-            <p class="text-secondary">Our preschool program has four dedicated classes</p>
+        <h2 class="seco fw-lighter fs-1">Our Classes</h2>
+            <p class="text-secondary fw-light">Our preschool program has four dedicated classes</p>
             <p class="orbitron mb-5">/\/\/\/</p>
         </div>
       </div>
