@@ -66,7 +66,7 @@ export default {
       
     },
     methods:{
-
+      // FUNZIONE CHE FA ANDARE AVANTI LE IMMAGINI DELLO SLIDER TRAMITE INCREMENTO DELLA VARIABILE ACTIVE 
       makeActive(){
         if(this.active < this.galleryPics.length ){
           this.active++
@@ -79,6 +79,8 @@ export default {
       }
     },
     mounted(){
+      // FUNZIONE CHE RICHIAMA LA VARIABILE CHE FA SCORRERE LE IMMAGINI IN MANIERA AUTOMATICA OGNI 3s 
+
       this.intervalId1 = setInterval(this.makeActive, 3000)
     }
 

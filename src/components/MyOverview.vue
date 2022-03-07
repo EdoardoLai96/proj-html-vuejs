@@ -38,6 +38,7 @@
               <div class="current-img mb-3 position-relative">
                 <i @click="nextPic" class="fa-solid ms_cursor-pointer fa-chevron-right position-absolute top-50 end-0 p-2  fs-5 bg-prim text-white"></i>
                 <i @click="previousPic" class="fa-solid ms_cursor-pointer fa-chevron-left  position-absolute top-50  p-2  fs-5  bg-prim text-white"></i>
+                <!-- QUESTO E' IL BINDING CHE ASSENGA ALL'INDEX DELL'IMMAGINE CORRENTE LO STESSO VALORE DELLA VARIABILE ACTIVE  -->
                 <img class="img-fluid" :src="currentImages[active].url" alt="">
               </div>
               <div class="row g-3">
@@ -86,7 +87,7 @@ export default {
       }
     },
     methods: {
-      // QUESTA E' LA FUNZIONE CHE PERMETTE DI SCORRERE IN AVANTI TRAMITE
+      // QUESTA E' LA FUNZIONE CHE PERMETTE DI SCORRERE IN AVANTI TRAMITE CLICK DELLA FRECCIA DX
       nextPic(){
         if(this.active < this.currentImages.length - 1){
           this.active++
@@ -94,6 +95,8 @@ export default {
           this.active = 0
         }
       },
+      // QUESTA E' LA FUNZIONE CHE PERMETTE DI SCORRERE INDIETRO TRAMITE CLICK DELLA FRECCIA SX
+
       previousPic(){
         if(this.active > 0){
           this.active--
@@ -132,6 +135,9 @@ object-fit: contain;
     border-bottom: 2px solid red;
     padding-bottom: 1rem;
 }
+
+
+  // STILE DEI BALLOON CUSTOM IN ALTO A SX NELLA SEZIONE OVERVIEW
 
 .ms_balloon_active{
     display: inline-block;
