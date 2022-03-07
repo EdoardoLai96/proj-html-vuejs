@@ -32,20 +32,13 @@
           </div>
           <div class="col ">
               <div class="current-img mb-3 position-relative">
-                <i class="fa-solid fa-chevron-right position-absolute top-50 end-0 p-2  fs-5 bg-prim text-white"></i>
-                <i class="fa-solid fa-chevron-left  position-absolute top-50  p-2  fs-5  bg-prim text-white"></i>
-                <img class="img-fluid" src="../assets/images/gallery_08-690x506.jpg" alt="">
+                <i @click="nextPic" class="fa-solid fa-chevron-right position-absolute top-50 end-0 p-2  fs-5 bg-prim text-white"></i>
+                <i @click="previousPic" class="fa-solid fa-chevron-left  position-absolute top-50  p-2  fs-5  bg-prim text-white"></i>
+                <img class="img-fluid" :src="currentImages[active].url" alt="">
               </div>
               <div class="row g-3">
-                <div class="col">
-                  <img class="ms_thumbnail ms_active" src="../assets/images/gallery_07-690x506.jpg" alt="">
-                </div>
-                <div class="col">
-                  <img class="ms_thumbnail" src="../assets/images/gallery_01-690x506.jpg" alt="">
-                </div>
-                <div class="col" >
-                  <img class="ms_thumbnail" src="../assets/images/gallery_08-690x506.jpg" alt="">
-
+                <div v-for="(currentImage,index) in currentImages" :key="index" class="col">
+                  <img class="ms_thumbnail" :class="[index == active ? 'ms_active' : '']" :src="currentImages[index].url" alt="">
                 </div>
               </div>
           </div>
@@ -72,8 +65,37 @@ export default {
             url: "../badge-box-hor-icons/diagram_alt.png"
 
           },
-        ]
+        ],
+        currentImages: [
+          {
+            url: "../slider_big-images/gallery_07-690x506.jpg"
+          },
+          {
+            url: "../slider_big-images/gallery_01-690x506.jpg"
+          },
+          {
+            url: "../slider_big-images/gallery_08-690x506.jpg"
+          },
+        ],
+
+        active : 0
       }
+    },
+    methods: {
+      nextPic(){
+        if(this.active < this.currentImages.length - 1){
+          this.active++
+        }else{
+          this.active = 0
+        }
+      },
+      previousPic(){
+        if(this.active > 0){
+          this.active--
+        }else{
+          this.active = this.currentImages.length - 1
+        }
+      },
     }
 
 }
