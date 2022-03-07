@@ -3,7 +3,7 @@
     <div class="container py-5">
       <div class="row">
         <div class="col text-center">
-        <h2 class="seco fw-light">Welcome to Fable</h2>
+        <h2 class="seco fw-light">Contact Us</h2>
             <p class="text-secondary fw-light">Family daycare, preschool, and kindergarten</p>
             <p class="orbitron">/\/\/\/</p>
         </div>
@@ -62,7 +62,7 @@ export default {
           },
           {
             title: "Business Hours",
-            text: "Monday - Friday 8.00 am - 5.00 pm Weekend Closed",
+            text: "Monday - Friday <br/> 8.00 am - 5.00 pm Weekend Closed",
             background: null,
             url: "../badge-box-vert-small-icons_footer/clock.png"
           },

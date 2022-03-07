@@ -17,10 +17,11 @@
 
         <nav class="col-7 d-flex justify-content-center">
         <!-- ELEMENTI INSERITI DINAMICAMENTE DA DATA TRAMITE CICLO FOR  -->
-        <a v-for="(nav_item, index) in nav_items" :key="index" :href="nav_item.href" class=" nav-item seco mx-2 py-2 px-3 text-center">
+        <MyNavItem v-for="(nav_item, index) in nav_items" :key="index"  :nav_item="nav_items[index]"/>
+        <!-- <a v-for="(nav_item, index) in nav_items" :key="index" :href="nav_item.href" class=" nav-item seco mx-2 py-2 px-3 text-center">
           <i :class="'fs-4 fa-solid fa-' + nav_item.icon_name"></i>
           <p class="text-center mb-0">{{nav_item.text}}</p>
-        </a>
+        </a> -->
         </nav>
 
       </div>
@@ -29,8 +30,12 @@
 </template>
 
 <script>
+import MyNavItem from '../components/partials/MyNavItem.vue'
 export default {
     name: "MyHeader",
+    components: {
+      MyNavItem
+    },
 
     data(){
       return{
@@ -40,37 +45,37 @@ export default {
           {
             href: "#jumbotron",
             text: "Home",
-            icon_name: "house"
+            icon_name: "fa-solid fa-house"
           },
           {
             href: "#welcome",
             text: "Pages",
-            icon_name: "file-lines"
+            icon_name: "fa-solid fa-file-lines"
           },
           {
             href: "#overview",
             text: "Blog",
-            icon_name: "print"
+            icon_name: "fa-solid fa-print"
           },
           {
             href: "#ourclasses",
             text: "Shop",
-            icon_name: "cart-arrow-down"
+            icon_name: "fa-solid fa-cart-arrow-down"
           },
           {
             href: "#mygoals",
             text: "Shortcodes",
-            icon_name: "flask"
+            icon_name: "fa-solid fa-flask"
           },
           {
             href: "#contactus",
             text: "Support",
-            icon_name: "headset"
+            icon_name: "fa-solid fa-headset"
           },
           {
             href: "#contactus",
             text: "Contact",
-            icon_name: "envelope"
+            icon_name: "fa-solid fa-envelope"
           },
         ]
       }

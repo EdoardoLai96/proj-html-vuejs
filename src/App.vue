@@ -19,6 +19,11 @@ export default {
     MyHeader,
     MyMain,
     MyFooter,
+  },
+  data(){
+    return{
+      
+    }
   }
 }
 </script>
