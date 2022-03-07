@@ -60,25 +60,25 @@ export default {
           title: "Learning & Fun",
           text: "Custom medium lenght text 1 averagely long the first of 4 cards.",
           background: "prim",
-          url: "../badge-box-vert-small-icons/toy.png"
+          url: "../badge-box-vert-small-icons_goals/toy.png"
         },
         {
           title: "Healthy Meals",
           text: "Custom medium lenght text 2 averagely long, second of 4 cards.",
           background: "seco",
-          url: "../badge-box-vert-small-icons/meal.png"
+          url: "../badge-box-vert-small-icons_goals/meal.png"
         },
         {
           title: "Friendly Place",
           text: "Custom medium lenght text 3 averagely long the third of 4 cards.",
           background: "prim",
-          url: "../badge-box-vert-small-icons/school.png"
+          url: "../badge-box-vert-small-icons_goals/school.png"
         },
         {
           title: "Children Safety",
           text: "Custom medium lenght text 4 averagely long the fourth of 4 cards.",
           background: "seco",
-          url: "../badge-box-vert-small-icons/shield.png"
+          url: "../badge-box-vert-small-icons_goals/shield.png"
         },
         ],
 

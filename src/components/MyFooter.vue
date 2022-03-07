@@ -8,51 +8,10 @@
             <p class="orbitron">/\/\/\/</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row justify-content-center">
 
-          <div class="col-3 d-flex justify-content-center">
-            <div class="badge-box-ver">
-              <div class="badge-icon p-0">
-                <img src="../assets/images/envelope_primary.png" alt="">
-              </div>
-              <div class="badge-text">
-                <h4 class="badge-title">Badge Title</h4>
-                <p class="badge-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione! Perferendis inventore nam aliquid minima pariatur </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 d-flex justify-content-center">
-            <div class="badge-box-ver">
-              <div class="badge-icon p-0 ">
-                <img src="../assets/images/mobile.png" alt="">
-              </div>
-              <div class="badge-text">
-                <h4 class="badge-title">Badge Title</h4>
-                <p class="badge-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione! Perferendis inventore nam aliquid minima pariatur </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 d-flex justify-content-center">
-            <div class="badge-box-ver">
-              <div class="badge-icon p-0 ">
-                <img src="../assets/images/clock.png" alt="">
-              </div>
-              <div class="badge-text">
-                <h4 class="badge-title">Badge Title</h4>
-                <p class="badge-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione! Perferendis inventore nam aliquid minima pariatur </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-3 d-flex justify-content-center">
-            <div class="badge-box-ver">
-              <div class="badge-icon p-0 ">
-                <img src="../assets/images/document_prim.png" alt="">
-              </div>
-              <div class="badge-text">
-                <h4 class="badge-title">Badge Title</h4>
-                <p class="badge-caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione! Perferendis inventore nam aliquid minima pariatur </p>
-              </div>
-            </div>
+          <div v-for="(badgeBoxSmall, index) in badgeBoxesSmall" :key="index" class="col-2  d-flex justify-content-center">
+            <MyBadgeBoxSmall :badgeBoxSmall="badgeBoxesSmall[index]"/>
           </div>
 
       </div>
@@ -79,8 +38,44 @@
 </template>
 
 <script>
+import MyBadgeBoxSmall from '../components/partials/MyBadgeBoxSmall.vue'
+
 export default {
-    name: "MyFooter"
+    name: "MyFooter",
+    components: {
+      MyBadgeBoxSmall
+    },
+    data(){
+      return{
+        badgeBoxesSmall : [
+          {
+            title: "Postal Address",
+            text: " Fable Care Center 85 Fentiman Ave, <br/> Ottawa ON and K1S 0T7 ",
+            background: null,
+            url: "../badge-box-vert-small-icons_footer/envelope_primary.png"
+          },
+          {
+            title: "Phone & Email",
+            text: "Phone: 1-800-64-38 Fax: 1-800-64-39 office@fable.com",
+            background: null,
+            url: "../badge-box-vert-small-icons_footer/mobile.png"
+          },
+          {
+            title: "Business Hours",
+            text: "Monday - Friday 8.00 am - 5.00 pm Weekend Closed",
+            background: null,
+            url: "../badge-box-vert-small-icons_footer/clock.png"
+          },
+          {
+            title: "Sessions",
+            text:"Mornings, 8 am - 12 pm <br/> Afternoons, 1 pm - 5 pm Full Day, 8 am - 5 pm",
+            background: null,
+            url: "../badge-box-vert-small-icons_footer/document_prim.png"
+          },
+        ],
+
+      }
+    }
 
 }
 </script>

@@ -5,7 +5,7 @@
         </div>
         <div class="badge-text">
             <h4 class="badge-title my-3 fw-light">{{badgeBoxSmall.title}}</h4>
-            <p class="badge-caption text-secondary">{{badgeBoxSmall.text}} </p>
+            <p class="badge-caption text-secondary" v-html="badgeBoxSmall.text"></p>
         </div>
     </div>
 </template>
