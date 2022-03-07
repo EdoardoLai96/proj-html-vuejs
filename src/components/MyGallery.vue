@@ -102,10 +102,6 @@ export default {
     z-index: 2;
     min-height: 500px;
   }
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
   .img_box{
     border: 2px solid white;
     border-radius: 50%;
